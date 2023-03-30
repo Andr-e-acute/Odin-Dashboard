@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>ODIN Dashboard Project</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        header
+      <div class="searchbar-container">
+        <label for="search-field">
+          <img src="img/magnify.svg" alt="search logo" class="icon-small" />
+        </label>
+        <input type="text" id="search-field" />
+      </div>
+      <div class="profile-container">
+        <button>
+          <img
+            src="img/bell-ring-outline.svg"
+            alt="notify icon"
+            class="icon-small"
+          />
+        </button>
+        <img
+          src="avtarIcons/bee.png"
+          alt="profilePicture"
+          class="profile-pic-small"
+        />
+        <h3>User Name</h3>
+      </div>
+      <div class="welcome-container">
+        <img
+          src="avtarIcons/bee.png"
+          alt="profilePicture"
+          class="profile-pic-small"
+        />
+      </div>
+      <div class="btn-container"></div>
     </header>
-    <nav class="sidebar">
-        sidebar
-    </nav>
-    <div class="content">
-        content
-    </div>
+    <nav class="sidebar">sidebar</nav>
+    <div class="content">content</div>
     <div class="info">
-        <div class="announcements">Announcements</div>
-        <div class="trending">Trending</div>
+      <div class="announcements">Announcements</div>
+      <div class="trending">Trending</div>
     </div>
-</body>
+  </body>
 </html>
