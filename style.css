@@ -63,7 +63,9 @@ body{
     border: none;
     background-color: inherit;
 }
-.icon-btn img:hover{
+.icon-btn img:hover,
+.icon-btn img:focus
+{
     transform: scale(1.1);
 }
 
@@ -78,9 +80,10 @@ body{
 }
 .searchbar-container input{
     font-size: 1.5rem;
-    border-radius: 15px;
+    border-radius: 30px;
     border: none;
     background-color: var(--main-bg-color);
+    padding: 5px;
     margin: 0 15px ;
 }
 .profile-container{
@@ -99,9 +102,33 @@ body{
     align-items: center;
     justify-content: center;
 }
+.welcome-container{
+    display: flex;
+}
+.welcome-container .container *{
+    margin: 10px;
+}
 .bigger-pic{
     height: 75px;
     width: 75px;
 }
-
-
+ .btn-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+ }
+ .btn-container button{
+    border: none;
+    background-color: var(--contrast-color);
+    color: var(--main-bg-color);
+    font: inherit;
+    font-size:1rem;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-weight: bolder;    
+}
+.btn-container button:hover,
+.btn-container button:focus{
+    transform: scale(1.1);
+}
