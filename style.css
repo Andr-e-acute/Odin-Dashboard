@@ -24,13 +24,11 @@ body{
     margin: 0;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
-    
-    /* only for testing */
-    gap: 10px;
     color: var(--font-dark-color);
     font-family: Roboto;
+    background-color: var(--main-bg-color);
 }
 .header{
     background-color: var(--sec-bg-color);
@@ -38,8 +36,10 @@ body{
     grid-row: 1;
     display: grid;
     grid-template-rows: repeat(2,1fr);
-    grid-template-columns: 3fr 2fr;
+    /* grid-template-columns: 3fr 2fr; */
     padding: 2% 4%;
+    box-shadow: 0px 3px 5px rgba(112, 112, 112, 0.526);
+    margin-bottom: 10px;
 }
 .sidebar{
     background-color:var(--contrast-color);
@@ -51,11 +51,7 @@ body{
     grid-column: 2;
     grid-row: 2;
 }
-.info{
-    background-color: var(--main-bg-color);
-    grid-column: 3;
-    grid-row: 2;
-}
+
 
 
 .icon-small{
@@ -74,7 +70,10 @@ body{
     transform: scale(1.1);
 }
 
-
+.top-header{
+    display: flex;
+    justify-content: space-between;
+}
 .searchbar-container{
     display: grid;
     grid-template-columns: auto 1fr;
@@ -107,11 +106,18 @@ body{
     align-items: center;
     justify-content: center;
 }
+.bottom-header{
+    display: flex;
+    justify-content: space-between;
+}
 .welcome-container{
     display: flex;
 }
 .welcome-container .container *{
-    margin: 10px;
+    margin: 10px 0 0 10px;
+}
+.welcome-container .container h2{
+    min-width: 10ch;
 }
 .bigger-pic{
     height: 75px;
