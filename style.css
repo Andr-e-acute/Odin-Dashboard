@@ -24,6 +24,8 @@ body{
     
     /* only for testing */
     gap: 10px;
+    color: var(--font-dark-color);
+    font-family: Roboto;
 }
 .header{
     background-color: var(--sec-bg-color);
@@ -49,12 +51,23 @@ body{
     grid-column: 3;
     grid-row: 2;
 }
+
+
 .icon-small{
-    width: 1rem;
-}
-.profile-pic-small{
     width: 1.5rem;
 }
+.profile-img{
+    width: 70%;
+}
+.icon-btn{
+    border: none;
+    background-color: inherit;
+}
+.icon-btn img:hover{
+    transform: scale(1.1);
+}
+
+
 .searchbar-container{
     display: grid;
     grid-template-columns: auto 1fr;
@@ -64,10 +77,31 @@ body{
     display: flex;
 }
 .searchbar-container input{
+    font-size: 1.5rem;
     border-radius: 15px;
     border: none;
     background-color: var(--main-bg-color);
-    margin: 15px;
+    margin: 0 15px ;
+}
+.profile-container{
+    display: flex;
+    gap:15px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.profile-pic{
+    background-color:lightblue ;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bigger-pic{
+    height: 75px;
+    width: 75px;
 }
 
 

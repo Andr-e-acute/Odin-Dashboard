@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
     <title>ODIN Dashboard Project</title>
   </head>
   <body>
@@ -16,26 +17,31 @@
         <input type="text" id="search-field" />
       </div>
       <div class="profile-container">
-        <button>
+        <button class="icon-btn">
           <img
             src="img/bell-ring-outline.svg"
             alt="notify icon"
             class="icon-small"
           />
-        </button>
-        <img
+        </button >
+        <div class="profile-pic">
+          <img
           src="avtarIcons/bee.png"
           alt="profilePicture"
-          class="profile-pic-small"
+          class="profile-img"
         />
+        </div>
+        
         <h3>User Name</h3>
       </div>
       <div class="welcome-container">
-        <img
-          src="avtarIcons/bee.png"
-          alt="profilePicture"
-          class="profile-pic-small"
-        />
+        <div class="profile-pic bigger-pic">
+          <img
+            src="avtarIcons/bee.png"
+            alt="profilePicture"
+            class="profile-img"
+          />
+        </div>
       </div>
       <div class="btn-container"></div>
     </header>
